@@ -1,0 +1,158 @@
+{
+  "profile": {
+    "name": "Chinki",
+    "role": "Electronics & Communication Engineering \u2014 AI Specialization",
+    "tagline": "Building at the point where circuits meet cognition \u2014 NLP pipelines, blockchain dashboards, and 200+ solved problems along the way.",
+    "email": "chinkisinghal789@email.com",
+    "phone": "+919050888789",
+    "links": {
+      "github": "https://github.com",
+      "linkedin": "https://linkedin.com",
+      "leetcode": "https://leetcode.com"
+    },
+    "stats": [
+      {
+        "label": "GPA",
+        "value": 9.57,
+        "decimals": 2,
+        "suffix": ""
+      },
+      {
+        "label": "DSA solved",
+        "value": 200,
+        "decimals": 0,
+        "suffix": "+"
+      },
+      {
+        "label": "Shipped projects",
+        "value": 2,
+        "decimals": 0,
+        "suffix": ""
+      }
+    ],
+    "traits": [
+      "Problem Solving",
+      "Communication",
+      "Leadership",
+      "Decision Making"
+    ]
+  },
+  "experience": [
+    {
+      "company": "Sansoftech",
+      "role": "Contributor \u2014 FairPress",
+      "date": "July 2025",
+      "description": "Assisting in building an AI tool to detect bias and misinformation across news, blogs, and social media, using the Hugging Face API and Streamlit."
+    }
+  ],
+  "projects": [
+    {
+      "id": "fairpress",
+      "name": "FairPress",
+      "date": "July 2025",
+      "description": "An AI-powered tool that analyzes news, blogs, and social media to detect bias and misinformation. Implements NLP pipelines using Hugging Face Zephyr models, surfacing credibility scores, bias highlights, and sentiment charts on a Streamlit dashboard.",
+      "tags": [
+        "Hugging Face Hub API",
+        "Python",
+        "Streamlit"
+      ],
+      "link": "#",
+      "graphic": "bars"
+    },
+    {
+      "id": "minechain",
+      "name": "Minechain",
+      "date": "Nov 2025",
+      "description": "A blockchain-based platform to track and verify mining operations securely \u2014 with automated reporting of mined resources and real-time updates surfaced on a web dashboard.",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Solidity"
+      ],
+      "link": "#",
+      "graphic": "chain"
+    }
+  ],
+  "skills": {
+    "bars": [
+      {
+        "label": "Python",
+        "level": 90
+      },
+      {
+        "label": "C / C++",
+        "level": 80
+      },
+      {
+        "label": "DSA / Problem Solving",
+        "level": 85
+      },
+      {
+        "label": "HTML / CSS",
+        "level": 78
+      }
+    ],
+    "groups": [
+      {
+        "label": "Languages",
+        "items": [
+          "C",
+          "C++",
+          "Python"
+        ]
+      },
+      {
+        "label": "Web Technologies",
+        "items": [
+          "HTML",
+          "CSS"
+        ]
+      },
+      {
+        "label": "Tools & Concepts",
+        "items": [
+          "Git",
+          "VS Code",
+          "PyCharm",
+          "DSA",
+          "OOPs",
+          "DBMS"
+        ]
+      }
+    ]
+  },
+  "education": [
+    {
+      "school": "Indira Gandhi Delhi Technical University for Women",
+      "date": "Aug 2024 \u2013 May 2028",
+      "detail": "B.Tech, Electronics & Communication Engineering \u2014 Specialization in AI",
+      "badge": "GPA 9.57"
+    },
+    {
+      "school": "Ideal Senior Secondary School",
+      "date": "Apr 2022 \u2013 Mar 2023",
+      "detail": "Class XII \u2014 PCM + Physical Education",
+      "badge": "86.2%"
+    },
+    {
+      "school": "BRCM Public School, Bahal",
+      "date": "Apr 2020 \u2013 Mar 2021",
+      "detail": "Class X",
+      "badge": "95.6%"
+    }
+  ],
+  "leadership": [
+    "Finalist, InnovEarth Ideathon",
+    "Sponsorship Member, Synergy \u2014 The Sports Society, IGDTUW",
+    "Solved 200+ DSA questions on LeetCode",
+    "HR Member, MySeed IGDTUW (Tech Society)",
+    "Campus Ambassador, Google Student Ambassador Program"
+  ],
+  "certifications": [
+    "Generative AI \u2014 IGDTUW",
+    "Campus Ambassador \u2014 IGDTUW",
+    "Tata GenAI Data Analytics Simulation \u2014 Forage (Tata)"
+  ],
+  "messages": []
+}

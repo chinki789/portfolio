@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chinki — Portfolio</title>
+<meta name="description" content="Chinki — Electronics &amp; Communication Engineering student specializing in AI. Builder of FairPress and Minechain.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="trace-rail" aria-hidden="true"><div class="trace-fill"></div></div>
+
+<header class="nav" id="nav">
+  <a href="#top" class="nav-mark">CS</a>
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="nav-cta">Say hello</a>
+</header>
+
+<main id="top">
+
+  <!-- HERO (populated by JS from /api/profile) -->
+  <section class="hero">
+    <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <p class="eyebrow mono reveal-up" style="--d:0">// signal ⟶ intelligence</p>
+    <h1 class="hero-name reveal-up" style="--d:1" id="heroName">…</h1>
+    <p class="hero-role reveal-up" style="--d:2" id="heroRole"></p>
+    <p class="hero-sub reveal-up" style="--d:3" id="heroTagline"></p>
+
+    <div class="hero-stats reveal-up" style="--d:4" id="heroStats"></div>
+
+    <div class="hero-links reveal-up" style="--d:5" id="heroLinks">
+      <a href="#projects" class="btn btn-primary">View projects</a>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to content">
+      <span class="mono">scroll</span>
+      <span class="scroll-line" aria-hidden="true"></span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-head">
+      <span class="node" aria-hidden="true"></span>
+      <span class="section-tag mono">01 · About</span>
+    </div>
+    <h2 class="section-title">Currently wiring together <span class="accent-violet">hardware instincts</span> and <span class="accent-cyan">software judgment.</span></h2>
+    <p class="section-body">
+      I'm a B.Tech student in Electronics &amp; Communication Engineering at IGDTUW, specializing in Artificial Intelligence.
+      That mix shows up in how I build — I care about signal, not noise, whether that's a neural network separating fact
+      from misinformation or a dashboard reporting mining data in real time. Off the clock, I'm usually deep in a DSA
+      problem, a sports society sponsorship deck, or a new Google Student Ambassador task.
+    </p>
+    <div class="about-traits" id="aboutTraits"></div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section-head">
+      <span class="node" aria-hidden="true"></span>
+      <span class="section-tag mono">02 · Experience</span>
+    </div>
+    <h2 class="section-title">Experience</h2>
+    <div id="experienceList"></div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-head">
+      <span class="node" aria-hidden="true"></span>
+      <span class="section-tag mono">03 · Projects</span>
+    </div>
+    <h2 class="section-title">Projects</h2>
+    <div class="project-grid" id="projectGrid"></div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-head">
+      <span class="node" aria-hidden="true"></span>
+      <span class="section-tag mono">04 · Skills</span>
+    </div>
+    <h2 class="section-title">Toolkit</h2>
+
+    <div class="skills-panel">
+      <div class="skill-bars" id="skillBars"></div>
+      <div class="skills-grid" id="skillGroups"></div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="section-head">
+      <span class="node" aria-hidden="true"></span>
+      <span class="section-tag mono">05 · Education</span>
+    </div>
+    <h2 class="section-title">Education</h2>
+    <ul class="timeline" id="timeline"></ul>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section class="section" id="leadership">
+    <div class="section-head">
+      <span class="node" aria-hidden="true"></span>
+      <span class="section-tag mono">06 · Leadership</span>
+    </div>
+    <h2 class="section-title">Leadership &amp; Extracurricular</h2>
+    <ul class="plain-list" id="leadershipList"></ul>
+
+    <h3 class="sub-title mono">Certifications</h3>
+    <ul class="plain-list" id="certList"></ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="section-head">
+      <span class="node" aria-hidden="true"></span>
+      <span class="section-tag mono">07 · Contact</span>
+    </div>
+    <h2 class="section-title">Let's build something.</h2>
+    <p class="section-body">
+      Open to internships, collaborations, and anything where AI meets real-world signal. Send a message directly —
+      it goes straight to the backend.
+    </p>
+
+    <form id="contactForm" class="contact-form" novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required minlength="2" maxlength="100" placeholder="Your name">
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required minlength="5" maxlength="2000" rows="4" placeholder="What's on your mind?"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" id="submitBtn">Send message</button>
+      <p class="form-status mono" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+
+    <div class="hero-links" id="contactLinks"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="mono">Built by Chinki — © <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

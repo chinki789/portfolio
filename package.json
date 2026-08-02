@@ -1,0 +1,17 @@
+{
+  "name": "chinki-portfolio",
+  "version": "1.0.0",
+  "description": "Full-stack portfolio for Chinki — Express API + static frontend",
+  "main": "server/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0"
+  }
+}
